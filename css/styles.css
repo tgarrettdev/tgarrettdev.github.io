@@ -11639,5 +11639,6 @@ footer a:hover, footer a:active, footer a:focus {
     order : 2;
    } 
   #nav {
-    padding: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
 }
