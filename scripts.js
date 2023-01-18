@@ -56,7 +56,7 @@ $(document).ready(function() {
             return;
         }
 
-        // process the form
+        // process the forms
         $.ajax({
             type: 'POST',
             url: 'submit-form.php',
