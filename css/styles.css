@@ -11641,3 +11641,17 @@ footer a:hover, footer a:active, footer a:focus {
     padding-right: 0px;
     padding-left: 0px;
 }
+
+input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button#submitButton {
+  margin-top: 20px;
+  width: 100%;
+}
+
+button#contact-button {
+  min-width: 200px;
+}
