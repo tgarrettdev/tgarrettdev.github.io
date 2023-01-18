@@ -20,7 +20,7 @@
         }
         
         // Send email
-        $to = 'aifinancialsolutions.com@gmail.com';
+        $to = 'tgarrett.92@icloud.com';
         $subject = 'New contact form submission';
         $headers = "From: " . strip_tags($email) . "\r\n";
         $headers .= "Reply-To: ". strip_tags($email) . "\r\n";
