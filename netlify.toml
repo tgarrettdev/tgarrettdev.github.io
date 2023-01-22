@@ -1,0 +1,8 @@
+[build]
+  command = "echo 'Nothing to build'"
+  publish = "."
+
+[[redirects]]
+  from = "/submit"
+  to = "/success"
+  status = 200

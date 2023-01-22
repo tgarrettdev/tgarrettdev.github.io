@@ -11646,6 +11646,7 @@ input {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+}
 
 button#submitButton {
   margin-top: 20px;
@@ -11654,4 +11655,8 @@ button#submitButton {
 
 button#contact-button {
   min-width: 200px;
+}
+
+.form-group {
+  margin-bottom: 20px;
 }

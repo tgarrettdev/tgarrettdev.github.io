@@ -25,15 +25,16 @@
 
         gtag('config', 'G-7GRWGRT120');
         </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
             <div id="nav" class="container px-5">
                 <a class="navbar-brand" href="#home">
-                    AI Financial Solutions
+                    <img class="responsive" src="./assets/img/logo-text.png" height="40px" alt="..." />
                   </a>
-                <button data-tf-popup="NuSAWUn9" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=Ai Financial Lead Capture" data-tf-transitive-search-params style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#0445AF;color:#fff;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin:0;text-decoration:none;">Get in touch</button>
+                <button id="feedbackButton" onclick="openFeedbackModal()" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#0445AF;color:#fff;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin:0;text-decoration:none;">Get in touch</button>
             </div>
         </nav>
         <!-- Mashead header-->
@@ -46,7 +47,7 @@
                             <h1 class="mb-3">Efficient Document Management with our Automated Scanning Solution</h1>
                             <p class="lead fw-normal text-muted">Our automated scanning solution streamlines document management for various industries, by automating review process, integrating with CRM systems and providing valuable insights.</p>
                             <div class="mb-5">                        
-                                <button data-tf-popup="NuSAWUn9" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=Ai Financial Lead Capture" data-tf-transitive-search-params style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#0445AF;color:#fff;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin:0;text-decoration:none;">Get in touch</button>
+                                <button id="feedbackButton" onclick="openFeedbackModal()" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#0445AF;color:#fff;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin:0;text-decoration:none;">Get in touch</button>
                             </div>
                             <div class="d-flex flex-column flex-lg-row align-items-center">
                                 <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." /></a>
@@ -174,7 +175,7 @@
                         <p class="lead fw-normal text-muted mb-5 mb-lg-0">From reviewing documents to organizing and storing them, and even communicating with clients, the process can be overwhelming and can take up a lot of your time and resources. And, the risk of human errors or missing important documents is always there. Imagine having a solution that can automate and streamline these processes, allowing you to focus on more important tasks. Imagine having access to valuable insights and data that can help you make informed decisions and optimize your products and services. With this solution, you can increase your efficiency and save time and resources while gaining a competitive edge in your industry. Let us help you take your business to the next level, schedule a demo with us today!</p>
                     </div>
                     <div class="col-sm-8 col-md-6">
-                        <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="https://source.unsplash.com/u8Jn2rzYIps/900x900" alt="..." /></div>
+                        <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="./assets/img/bg-logo.png" alt="..." /></div>
                     </div>
                 </div>
             </div>
@@ -211,7 +212,7 @@
                                 <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body border-0 p-4">
-                                <form id="contact-form" method="post" action="submit-form.php">
+                                <form id="contact-form" method="POST" data-netlify="true">
                                     <div class="form-group">
                                         <label for="name">Name:</label>
                                         <input type="text" class="form-control" id="name" name="name" required>

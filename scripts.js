@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', event => {
     const responsiveNavItems = [].slice.call(
         document.querySelectorAll('#navbarResponsive .nav-link')
     );
-    responsiveNavItems.map(function (responsiveNavItem) {
+    responsiveNavItems.map(function(responsiveNavItem) {
         responsiveNavItem.addEventListener('click', () => {
             if (window.getComputedStyle(navbarToggler).display !== 'none') {
                 navbarToggler.click();
@@ -24,10 +24,13 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
+function openFeedbackModal() {
+    $('#feedbackModal').modal('show');
+}
+
 $(document).ready(function() {
     // handle form submission
-    $('#contact-form').submit(function(event) {
-        event.preventDefault();
+    $('#contact-form').submit(function() {
         var formData = {
             'name': $('input[name=name]').val(),
             'email': $('input[name=email]').val(),
@@ -55,26 +58,6 @@ $(document).ready(function() {
             alert("Invalid Email");
             return;
         }
-
-        // process the forms
-        $.ajax({
-            type: 'POST',
-            url: 'submit-form.php',
-            data: formData,
-            dataType: 'json',
-            encode: true
-        }).done(function(data) {
-            // handle successful submission
-            $('#submitButton').attr("disabled", true);
-            if (data.status === "success") {
-                $('#submitSuccessMessage').removeClass('d-none');
-            } else {
-                $('#submitErrorMessage').removeClass('d-none');
-            }
-        }).fail(function(data) {
-            // handle error
-            $('#submitErrorMessage').removeClass('d-none');
-        });
     });
 
     function validateEmail(email) {
