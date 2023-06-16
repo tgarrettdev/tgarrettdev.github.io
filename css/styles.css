@@ -11322,7 +11322,7 @@ section {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #fff;
+  background-color: #040F29;
 }
 #mainNav .navbar-brand {
   font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -11538,7 +11538,7 @@ footer a:hover, footer a:active, footer a:focus {
 }
 
 .masthead {
-  background-color: #f8f9fa;
+  background-color: #040F29;
   padding-top: 9.5rem;
   padding-bottom: 5rem;
 }
