@@ -2832,8 +2832,9 @@ textarea.form-control-lg {
   white-space:nowrap;
   overflow:hidden;
   text-overflow:ellipsis;
-  background-color:#F2C0E9;color:
-  #041029;font-size:20px;
+  background-color:#F2C0E9;
+  color:#041029;
+  font-size:20px;
   border-radius:25px;
   padding:0 33px;
   font-weight:bold;
@@ -2842,6 +2843,16 @@ textarea.form-control-lg {
   text-align:center;
   margin:0;
   text-decoration:none;
+}
+
+/* Media query for devices with screen width up to 768px */
+@media (max-width: 768px) {
+  #feedbackButton {
+    font-size: 16px; /* decrease font-size */
+    padding: 0 20px; /* decrease padding */
+    height: 40px; /* decrease height */
+    line-height: 40px; /* adjust line-height */
+  }
 }
 
 .valid-feedback {
