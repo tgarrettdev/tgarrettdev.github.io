@@ -11668,3 +11668,8 @@ button#contact-button {
 .form-group {
   margin-bottom: 20px;
 }
+
+button#submitButton {
+  background-color: #EFC0E9;
+  color: #040F29;
+}
