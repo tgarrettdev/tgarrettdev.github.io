@@ -11447,10 +11447,10 @@ section.cta:before {
   display: none;
 }
 .features-device-mockup .circle .gradient-start-color {
-  stop-color: #2937f0;
+  stop-color: #ACBEEC;
 }
 .features-device-mockup .circle .gradient-end-color {
-  stop-color: #9f1ae2;
+  stop-color: #F0C1EA;
 }
 .features-device-mockup .shape-1 {
   position: absolute;
@@ -11559,10 +11559,10 @@ footer a:hover, footer a:active, footer a:focus {
   display: none;
 }
 .masthead .masthead-device-mockup .circle .gradient-start-color {
-  stop-color: #2937f0;
+  stop-color: #ACBEEC;
 }
 .masthead .masthead-device-mockup .circle .gradient-end-color {
-  stop-color: #9f1ae2;
+  stop-color: #F0C1EA;
 }
 .masthead .masthead-device-mockup .shape-1 {
   position: absolute;
