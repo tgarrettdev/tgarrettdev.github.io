@@ -63,6 +63,10 @@
   --bs-body-bg: #040F29;
 }
 
+#text-highlight {
+  color: #F2C0EA;
+}
+
 *,
 *::before,
 *::after {
