@@ -82,6 +82,8 @@
 @media (max-width: 768px) {
   #nav#mainNav {
     text-align: center;
+  }
+  img.responsive {
     max-width: 75%;
     height: auto;
   }
