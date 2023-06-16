@@ -79,9 +79,10 @@
   }
 }
 
-img.responsive {
-  max-width: 50%;
-  height: auto;
+@media (max-width: 768px) {
+  #nav#mainNav {
+    text-align: center;
+  }
 }
 
 body {
@@ -2826,34 +2827,6 @@ textarea.form-control-lg {
   border-bottom-left-radius: 0;
 }
 
-#feedbackButton {
-  font-family:Helvetica,Arial,sans-serif;display:inline-block;
-  max-width:100%;
-  white-space:nowrap;
-  overflow:hidden;
-  text-overflow:ellipsis;
-  background-color:#F2C0E9;
-  color:#041029;
-  font-size:20px;
-  border-radius:25px;
-  padding:0 33px;
-  font-weight:bold;
-  height:50px;cursor:pointer;
-  line-height:50px;
-  text-align:center;
-  margin:0;
-  text-decoration:none;
-}
-
-/* Media query for devices with screen width up to 768px */
-@media (max-width: 768px) {
-  #feedbackButton {
-    font-size: 16px; /* decrease font-size */
-    padding: 0 20px; /* decrease padding */
-    height: 40px; /* decrease height */
-    line-height: 40px; /* adjust line-height */
-  }
-}
 
 .valid-feedback {
   display: none;
